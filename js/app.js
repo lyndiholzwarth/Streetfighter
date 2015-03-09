@@ -29,14 +29,21 @@ $(document).ready(function(){
 		$('.ryu-still').hide();
 		$('.ryu-cool').show();}
  	});
+
 	$(document).keyup(function(e){
 		var key = e.which;
 		if (key == 88){
-		$('.ryu-cool').hide();
-		$('.ryu-ready').show();
-		$('.ryu-still').show();}
- 	});
-
+		$('.ryu-ready').hide();
+		$('.ryu-still').show();
+		$('.ryu-cool').hide();}
+	});
+//	$('.ryu').mouseenter().keyup(function(e){
+//		var key = e.which;
+//		if (key == 88){
+//			$('.ryu-cool').hide();
+//			$('.ryu-still').hide();
+//			$('.ryu-ready').show();}
+//	});
 });
 
 function playHadouken(){
@@ -44,4 +51,16 @@ function playHadouken(){
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();
 }
+
+//function mouseOnKeyUp(){
+//	$('.ryu-cool').hide();
+//	$('.ryu-still').hide();
+//	$('.ryu-ready').show();
+//}
+
+//function MouseOffKeyUp(){
+//	$('.ryu-cool').hide();
+//	$('.ryu-still').hide();
+//	$('.ryu-ready').show();
+//}
 
